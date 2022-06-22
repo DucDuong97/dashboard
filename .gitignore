@@ -1,0 +1,5 @@
+# Eclipse
+build/
+node_modules/
+package-lock.json
+bundle.js
