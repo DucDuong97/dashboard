@@ -25,7 +25,7 @@ const xAxisLabelOffset = 50;
 
 
 const App = () => {
-  const data = useData();
+  const data = useData(["Country", "2020"]);
 
   if (!data) {
     return <pre>Loading...</pre>;
@@ -35,7 +35,7 @@ const App = () => {
   const innerWidth = width - margin.left - margin.right;
 
   const yValue = d => d.Country;
-  const xValue = d => d.Population;
+  const xValue = d => +d["2020"];
 
   const siFormat = format('.2s');
   const xAxisTickFormat = tickValue => siFormat(tickValue).replace('G', 'B');
