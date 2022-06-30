@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 import { scaleLinear, scaleOrdinal, format, extent } from 'd3';
 import { useData } from './useData';
@@ -98,5 +98,4 @@ const App = () => {
   );
 };
 
-const rootElement = document.getElementById('dashboard-root');
-ReactDOM.render(<App />, rootElement);
+ReactDOM.createRoot(document.getElementById('dashboard-root')).render(<App />);
