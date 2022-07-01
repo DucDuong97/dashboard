@@ -1,5 +1,6 @@
 # Eclipse
 build/
+data/
 node_modules/
 package-lock.json
 bundle.js

@@ -2,6 +2,7 @@
   "type": "module",
   "scripts": {
     "bar": "rollup -c rollup.cfg.js --environment GRAPH:bar -w",
+    "pie": "rollup -c rollup.cfg.js --environment GRAPH:pie -w",
     "scatter": "rollup -c rollup.cfg.js --environment GRAPH:scatter -w",
     "build": "rollup -c rollup.cfg.prod.js"
   },
